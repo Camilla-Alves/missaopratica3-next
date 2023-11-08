@@ -52,7 +52,7 @@ const LivroDados: NextPage = () => {
     <>
       <Menu />
       <main className="container">
-        <h1>Adicionar Livro</h1>
+        <h1>Dados do Livro</h1>
         <form onSubmit={incluir} method="post">
           <div className="form-group mb-3">
             <label htmlFor="titulo">Titulo</label>
@@ -78,7 +78,7 @@ const LivroDados: NextPage = () => {
           <div className="form-group mb-3">
             <label htmlFor="editora">Editora</label>
             <select
-              className="form-control"
+              className="form-select"
               id="editora"
               name="editora"
               onChange={(evento) => tratarCombo(evento)}
